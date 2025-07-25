@@ -5,7 +5,8 @@ const todos = [
   { title: "Buy groceries", done: false },
   { title: "Pay utility bills", done: true },
   { title: "Practice coding", done: false },
-  { title: "Walk the dog", done: true }
+  { title: "Walk the dog", done: true },
+  { title: "Complete Assignment", done:true}
 ];
 
 // Filter completed tasks
@@ -29,5 +30,5 @@ function displayTasks(title, taskArray) {
 
 //  Display in console
 console.log("Basic Todo List with Status Filter");
-displayTasks("Done", completedTasks);
-displayTasks("Ongoing", ongoingTasks);
+displayTasks("✅ Done", completedTasks);
+displayTasks("⌛ Ongoing", ongoingTasks);
